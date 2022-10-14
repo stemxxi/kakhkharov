@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KMT Web Development</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/Group-5.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style3.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets/images/Group-5.png" alt="" class="kmd-img">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo"><img src="assets/images/Group-5.png" alt="" class="kmd-img"></a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>О нас</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Услуги</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Особенности</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="portfolio.html" class="navbar-link" data-nav-link>Проекты</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Блог</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn btn-primary has-before has-after" data-modal="modal-callback">Давай пообщаемся 👋</a>
+      <div class="modal-wrap modal-wrap_hidden" id="modal-callback">
+        <div class="modal">
+            <h4 class="modal__title">Заказ звонка</h4>
+            <div class="modal__message">
+              Менеджер перезвонит вам и ответит на вопросы
+            </div>
+            <form action="" method="post" class="modal__form">
+                <input type="phone" name="phone" class="modal__input modal__input_phone" 
+                       placeholder="+998 (__) ___-__-__" required />
+                <button type="submit" class="modal__submit">Заказать</button>
+            </form>
+            <div class="modal__policy">
+                <p>&#169; Kakhkharov 2022</p>
+            </div>
+            <button class="modal__close">
+                <span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">
+              Разрабатываем <span class="has-before">Эффектные</span>
+              Сайты и Лендинги
+            </h1>
+
+            <p class="hero-text">
+              Разработаем проект с нуля, доработаем текущий проект или усилим вашу ИТ-команду лучшими разработчиками на рынке
+            </p>
+
+            <div class="wrapper">
+              <a href="#" class="btn btn-primary has-before has-after" data-modal="modal-callback">Как можно заказать</a>
+
+              <button class="hero-btn" aria-label="pixology promo">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                <a href="https://www.youtube.com/watch?v=BR4v4LIiw40&list=RDBR4v4LIiw40&start_radio=1&ab_channel=HammAli%26Navai" class="video"><span class="span">За Кулисами </span></a>
+              </button>
+            </div>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(0, 100%, 50%);">
+                  <ion-icon name="logo-youtube"></ion-icon>
+
+                  <span class="span">Youtube</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/Group-5.png" width="794" height="637" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+      
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <h2 class="h2 section-title service_title-text">Наши Услуги</h2>
+
+          <p class="section-text service_title-text">
+            Наша команда поможет вам тратить меньше зарабатывая больше!
+          </p>
+
+          <ul class="grid-list">
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #13c4a1">
+                  <ion-icon name="chatbox"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Сайт-визитка</a>
+                </h3>
+
+                <p class="card-text">
+                  Такой сайт проходит если, вам нужно заявить о своей компании, описать всего один товар или услугу и запустить контекстную
+рекламу.
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 8 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #6610f2">
+                  <ion-icon name="desktop"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Корпоративный сайт</a>
+                </h3>
+
+                <p class="card-text">
+                  Это сайт вашей компании, и офицальное представление в интернете. Содержащий информацию о компании, сфере ее деятельности, продукции и услугах.
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 14 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ffb700">
+                  <ion-icon name="bulb"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Интернет-магазин</a>
+                </h3>
+
+                <p class="card-text">
+                  Это онлайн магазин, который формирует заказ на покупку Вашего товара, с выбором способа оплаты И доставки заказа. При этом продажу товаров Вы осущетвляете дистанционным способом.
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 20 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #fc3549">
+                  <ion-icon name="phone-portrait"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Лендинг пэйдж</a>
+                </h3>
+
+                <p class="card-text">
+                  Современный одностраничный сайт, который позволяет показать посетителю вашего сайта товары и услуги, а также информацию о Вашей компании
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 2 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #00d280">
+                  <ion-icon name="archive"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Имиджевый сайт</a>
+                </h3>
+
+                <p class="card-text">
+                  Имиджевый сайт – это сайт, основной задачей которого является создание положительного впечатления о владельце при помощи визуального оформления. В роли заказчиков имиджевых сайтов могут выступать как крупные компании, так и представители малого и среднего бизнеса, и даже частные лица.
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 12 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+            <li class="grid-extra-list">
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ff612f">
+                  <ion-icon name="build"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Персональный сайт</a>
+                </h3>
+
+                <p class="card-text">
+                  В отличии от сайтов-визиток и корпоративных сайтов, персональные страницы являются представительствами не компаний, а частных лиц. Зачастую, подобные проекты отличаются малым объемом, содержат в себе сведения биографического или личного характера, а также информацию о роде деятельности владельца или об услугах, которые он оказывает.
+                </p>
+                <p class=" price-text">
+                  Цена на разработку
+                </p>
+                <p class="price-som">
+                 от 5 000 000 сум
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      <section class="section app">
+        <div class="container">
+
+          <div class="app-content">
+
+            <h2 class="h2 section-title">Search Our Popular Products And Stay Connected</h2>
+
+            <p class="section-text">
+              Projects gives you the added advantage of several apps and third party apps through
+              seamless
+              integrations.
+            </p>
+
+            <div class="btn-group">
+
+              <a href="portfolio.html" class="btn btn-primary">
+                <img src="./assets/images/play-store.svg" width="30" height="31" loading="lazy" alt="play store icon">
+
+                <span class="span">
+                  GET IT ON
+                  <strong class="strong">Portfolio</strong>
+                </span>
+              </a>
+
+              
+
+            </div>
+
+          </div>
+
+          <figure class="app-banner">
+            <img src="assets/images/app-banner.png" width="748" height="536" loading="lazy" alt="app screenshot"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      
+
+     
+
+
+
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets/images/Group-5.png" width="160" height="50" alt="logo" class="kmd-img">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  Tashkent, 10000, Uzbekistan
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+998 99 999-99-99</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:footcap@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">kakhkharov-timur@mail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">My Account</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon - Tue:</th>
+
+                  <td class="table-data">8AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Authoritatively morph 24/7 potentialities with error-free partnerships.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">Kakhkharov</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

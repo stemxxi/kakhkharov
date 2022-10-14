@@ -1,0 +1,244 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------*\
+  #APP
+\*-----------------------------------*/
+
+.app-content { margin-block-end: 25px; }
+
+.app .section-text { margin-block: 5px 10px; }
+
+.app .btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+.app .btn {
+  min-height: auto;
+  padding: 15px;
+}
+
+.app .btn img { margin-block-end: 10px; }
+
+.app .btn .strong {
+  margin-block-start: 5px;
+  font-weight: var(--fw-600);
+}
+
+.app-banner {
+  max-width: max-content;
+  margin-inline: auto;
+  aspect-ratio: 1 / 0.72;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 480px screen
+ */
+
+@media (min-width: 480px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { 
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+
+
+  
+  /**
+   * APP
+   */
+
+  .app .btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-inline: 25px;
+  }
+
+  .app .btn img { margin-block-end: 0; }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * RESET
+   */
+
+  body { font-size: 2rem; }
+
+
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 5rem;
+    --fs-2: 3.5rem;
+    --fs-3: 2.5rem;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 720px; }
+
+
+
+ 
+  /**
+   * APP
+   */
+
+  .app .btn { padding: 63px 20px; }
+
+  .app-content .span { font-size: 1.5rem; }
+
+  .app-content .strong { font-size: 2rem; }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+ 
+  /**
+   * APP
+   */
+
+  .app :is(.section-title, .section-text) { text-align: center; }
+
+  .app .btn-group { justify-content: center; }
+
+
+
+  
+
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 6rem;
+    --fs-2: 5rem;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1450px; }
+
+
+
+  
+
+
+  /**
+   * APP
+   */
+
+  .app .container {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .app-content { margin-block-end: 0; }
+
+  .app :is(.section-title, .section-text) { text-align: left; }
+
+  .app .section-title { --fs-2: 4rem; }
+
+  .app .btn-group { justify-content: flex-start; }
+
+}
